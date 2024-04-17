@@ -1,0 +1,57 @@
+
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard</title>
+    <link rel="stylesheet" href="dashboard_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Dashboard</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email ID</th>
+                    <th>Mobile No</th>
+                    <th>Username</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTable"></tbody>
+        </table>
+    </div>
+
+    <!-- Update Modal -->
+    <div id="updateModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Update User Details</h2>
+            <form id="updateForm">
+                <div>
+                    <label for="updateFullName">Full Name:</label>
+                    <input type="text" id="updateFullName" required>
+                </div>
+                <div>
+                    <label for="updateEmail">Email ID:</label>
+                    <input type="email" id="updateEmail" required>
+                </div>
+                <div>
+                    <label for="updateMobile">Mobile No:</label>
+                    <input type="tel" id="updateMobile" required>
+                </div>
+                <div>
+                    <label for="updateUsername">Username:</label>
+                    <input type="text" id="updateUsername" required disabled>
+                </div>
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
